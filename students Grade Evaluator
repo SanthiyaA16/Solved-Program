@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        if(m>=0){
+            if(m>=90 && m<=100)
+               System.out.println("Grade A");
+            else if(m<=89 && m>=80)
+                System.out.println("Grade B");
+            else if(m<=79 && m>=70)
+                System.out.println("Grade C");
+            else if(m<=69 && m>=60)
+                System.out.println("Grade D");
+            else if(m<=59 && m>=50)
+                System.out.println("Grade E");
+            else
+                System.out.println("Fail");
+        }
+    }
+}
